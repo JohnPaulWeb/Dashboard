@@ -34,8 +34,8 @@ export default function Navbar() {
                 Free <ChevronDown className="h-4 w-4" />
               </DropdownMenuTrigger>
               <DropdownMenuContent>
-                <DropdownMenuItem>Templates</DropdownMenuItem>
-                <DropdownMenuItem>Resources</DropdownMenuItem>
+                <DropdownMenuItem className="cursor-auto">Templates</DropdownMenuItem>
+                <DropdownMenuItem className="cursor-auto" >Resources</DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
             <a href="/bundle" className="text-foreground/60 hover:text-foreground">

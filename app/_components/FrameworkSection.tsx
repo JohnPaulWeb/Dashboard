@@ -12,7 +12,10 @@ const frameworks = [
     action: 'Bootstrap 5',
 },
 {
-
+    title: "Reactjs",
+    description:'React, sometimes referred to as a frontend JavaScript framework, is a JavaScript library created by Facebook.',
+    icon: '',
+    action: 'Framework'
 }
 ]
 
