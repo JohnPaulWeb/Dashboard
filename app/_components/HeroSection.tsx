@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 
 
 export default function HeroSection() {
@@ -31,7 +32,21 @@ export default function HeroSection() {
           Happy Developers
         </span>
       </div>
-      <div></div>
+      <div className="flex flex-wrap justify-center gap-4">
+        <Button size="lg">Ayanokoji</Button>
+        <Button size="lg" variant="outline">
+          Demos
+        </Button>
+      </div>
+
+      <div className="flex flex-wrap justify-center gap-8 grayscale">
+        {['Infosys', 'Capgemini', 'Persistent', 'Zoho'].map((company) => (
+          <div key={company} className="h-8 w-32 bg-contain bg-center bg-no-repeat opacity-40" style={{
+            backgroundImage: `url(/kojic.jpg)`
+          }} />
+          
+        ))}
+      </div>
      </section>
     );
   }

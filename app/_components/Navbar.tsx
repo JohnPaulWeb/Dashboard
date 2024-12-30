@@ -16,7 +16,7 @@ export default function Navbar() {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-8">
           <a href="/" className="flex items-center space-x-2">
-            <div className="text-2x1 font-bold text-purple-600">John UI </div>
+            <div className="text-2x1 font-bold bg-gradient-to-r text-purple-600 from-orange-600">John Dev </div>
           </a>
           <div className="hiddend md:flex md:gap-6">
             <DropdownMenu>

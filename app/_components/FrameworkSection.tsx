@@ -1,28 +1,61 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 
+import Link from "next/link";
 
 
 const frameworks = [
 {
-    title: "Bootstrap 5",
+    title: "Philippines Website",
     description:
-    'Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.',
-    icon: 'https://cdn-icons-png.flaticon.com/128/3917/3917749.png',
-    action: 'Bootstrap 5',
+    'This is the PH Website for i created ',
+    icon: '💚',
+    action: 'Click me',
+    href: 'https://jp-ph.pages.dev/',
+},
+{
+    title: "Mangaldan National High School",
+    description:'This is the website i created when i Grade 11 ',
+    icon: '🅱️',
+    action: 'Click me',
+    href: 'https://websimple-website.vercel.app/',
+},
+{
+    title: "Riverside",
+    description:'This is i created for my client website',
+    icon: '⚛️',
+    action: 'Click me',
+    href: 'https://responsive-website-gules.vercel.app/',
+},
+{
+    title: "Snake Game",
+    description:'This is the game i debug',
+    icon: '⚛️',
+    action: 'Framework',
+    href: 'https://not-mine-snake.vercel.app/',
+},
+{
+    title: "Portfolio",
+    description:'This is the game i debug',
+    icon: '⚛️',
+    action: 'Framework',
+    href: 'https://jp-ph.pages.dev/',
 },
 {
     title: "Reactjs",
-    description:'React, sometimes referred to as a frontend JavaScript framework, is a JavaScript library created by Facebook.',
-    icon: '',
-    action: 'Framework'
-}
+    description:'This is the PHP i using and with ',
+    icon: '⚛️',
+    action: 'Student Ranking System',
+    href: 'https://jp-ph.pages.dev/',
+},
+
 ]
 
 export default function FrameworkSection() {
     return (
      <section className="container py-24">
-        <h2 className="mb-12 text-center text-3x1 font-bold">Kiyotaka Ayanokoji</h2>
+        <h2 className="p-8  mb-12 text-center text-3x1 font-semibold bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600">Kiyotaka Ayanokoji</h2>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {frameworks.map((framework) => (
                 <Card key={framework.title} className="bg-gradient-to-br from-rose-50 to-sky-50">
@@ -35,7 +68,9 @@ export default function FrameworkSection() {
                     <CardContent>
                         <p className="mb-4 text-muted-foreground">{framework.description}</p>
                         <Button variant="outline" className="w-full">
-                            {framework.action}
+                        <Link href={framework.href} target="_blank" rel="noopener noreferrer">
+                  {framework.action}
+                </Link>
                         </Button>
                     </CardContent>
                 </Card>
